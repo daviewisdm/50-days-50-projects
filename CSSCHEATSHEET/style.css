@@ -1,0 +1,74 @@
+body{
+    color: rgb(213, 94, 94);
+    background: rgb(94, 144, 189);
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: normal;
+
+    line-height: 1.5em;
+}
+
+.container{
+    width: 82%;
+    margin:auto;
+}
+
+.box-1{
+    background-color: #333333;
+    color: aliceblue;
+
+    border-right: 5px red solid;
+    border-left: 5px red solid;
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    /* Same as above*/
+    border: 5px red solid;
+}
+
+.box-1 h1{
+    font-family: Tahoma;
+    font-weight: 700;
+    font-style: oblique;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+
+.box-2{
+    border: 3px dotted #ccc;
+}
+
+a{
+    text-decoration: none;
+    color: #474545;
+}
+
+a:hover{
+    color: #474545;
+}
+
+a active{
+    color: #4745;
+}
+
+
+.categories{
+    border: 1px solid #ccc;
+    padding:10px;
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align:center;
+}
+
+.categories ul{
+    padding:0;
+    list-style: disc
+}
+
+.categories li{
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ccc;
+    list-style-image: url(C:\Users\WISDM\Downloads\ver.png);
+}
