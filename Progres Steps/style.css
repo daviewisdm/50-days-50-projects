@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+:root {
+	--white: #ffff;
+	--black: #000;
+	--body-color: #f6f7fb;
+	--pink: #ff66a6;
+	--github-fill: var(--pink);
+	--github-color: var(--body-color);
+	--github-focus: var(--black);
+	--line-border-fill: var(--pink);
+	--line-border-empty: #e0e0e0;
+	--circle-text-color: rgb(83, 75, 75);
+	--muli: "Muli", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--body-color);
+	font-family: var(--muli);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+	text-align: center;
+}
+
+.progress-container {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 30px;
+	max-width: 100%;
+	width: 90rem;
+}
+
+.progress-container::before {
+	content: "";
+	background-color: var(--line-border-empty);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	height: 4px;
+	width: 100%;
+	z-index: -1;
+}
+
+.progress {
+	background-color: var(--pink);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	height: 4px;
+	width: 0%;
+	z-index: -1;
+	transition: 0.4s ease;
+}
+
+#mobile {
+	display: none;
+}
+
+/* circles were originally 130px */
+.circle {
+	background-color: var(--white);
+	color: var(--circle-text-color);
+	border-radius: 50%;
+	height: 7rem;
+	width: 7rem;
+	display: flex;
+	font-size: 82.5%;
+	align-items: center;
+	justify-content: center;
+	border: 3px solid var(--line-border-empty);
+	transition: 0.4s ease;
+}
+
+.circle.active {
+	border-color: var(--pink);
+}
+
+.btn {
+	background-color: var(--pink);
+	color: var(--black);
+	border: 0;
+	border-radius: 20px;
+	cursor: pointer;
+	font-family: inherit;
+	padding: 8px 30px;
+	margin: 5px;
+	font-size: 18px;
+}
+
+.btn:active {
+	transform: scale(0.96);
+}
+
+.w3-container a:focus,
+.btn:focus {
+	outline: 3px solid var(--pink);
+	outline-offset: 4px;
+}
+
+.w3-container a:focus {
+	border-radius: 2px;
+}
+
+.btn:disabled {
+	background-color: var(--line-border-empty);
+	cursor: not-allowed;
+}
+
+.github-corner:focus svg path {
+	fill: var(--github-focus);
+}
+
+.github-corner:focus .octo-arm,
+.github-corner:focus .octo-body {
+	fill: var(--github-color);
+}
+
+.github-corner:hover .octo-arm,
+.github-corner:focus .octo-arm {
+	animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+	0%,
+	100% {
+		transform: rotate(0);
+	}
+	20%,
+	60% {
+		transform: rotate(-25deg);
+	}
+	40%,
+	80% {
+		transform: rotate(10deg);
+	}
+}
+
+@media (max-width: 500px) {
+	.github-corner:hover .octo-arm {
+		animation: none;
+	}
+	.github-corner .octo-arm {
+		animation: octocat-wave 560ms ease-in-out;
+	}
+}
+
+@media (max-width: 360px) {
+	button,
+	.progress-container {
+		display: none;
+	}
+
+	#mobile {
+		display: inline-block;
+		margin: 0 5%;
+	}
+}
