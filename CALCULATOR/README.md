@@ -1,4 +1,4 @@
-# One UI 5 Calculator
+# MUI Calculator
 
 This is a simple calculator application built using HTML, CSS, and JavaScript. The calculator allows you to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
 
@@ -32,6 +32,4 @@ This project is licensed under the MIT License.
 ### Authors &copy;
 - [Davie Wisdom](https://instagram.com/wisdm.k)
 
-## Credits
 
-This calculator was built using HTML, CSS, and JavaScript. The HTML and CSS files provide the structure and styling of the calculator, while the JavaScript file provides the functionality [Source 0](https://webdesign.tutsplus.com/build-a-simple-calculator-with-html-css-and-javascript--cms-107917t), [Source 1](https://www.freecodecamp.org/news/how-to-build-an-html-calculator-app-from-scratch-using-javascript-4454b8714b98/), [Source 3](https://www.makeuseof.com/build-a-simple-calculator-using-html-css-javascript/), [Source 4](https://dev.to/javascriptacademy/create-a-simple-calculator-using-html-css-and-javascript-4o7k), [Source 5](https://blog.devgenius.io/build-a-calculator-using-html-css-javascript-d619cf6a2136), [Source 6](https://www.freecodecamp.org/news/javascript-dom-build-a-calculator-app/), [Source 7](https://freefrontend.com/css-calculators/), [Source 9](https://mdbootstrap.com/docs/standard/extended/calculator/).
